@@ -1,0 +1,111 @@
+.college-section, .hs-section, .ss-section{
+    display: flex;
+}
+.college, .hs, .ss{
+    max-width: 40%;
+    border: 2px solid white;
+    padding: 0.5rem .8rem;
+}
+.clg-heading, .hs-heading, .ss-heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.hs-section{
+    justify-content: flex-end;
+}
+
+.edu-main-section{
+    position: relative;
+}
+.timelines{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 48%;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+
+.bar{
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50.4%;
+    z-index: -1;
+}
+
+.grad-icon1, .grad-icon2, .grad-icon3{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: initial;
+
+}
+.grad-icon1{
+    margin-bottom: 11rem;
+}
+.grad-icon2{
+    margin-bottom: 8rem;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .grad-icon2{
+        margin-bottom: 9rem;
+    }
+    .grad-icon1{
+        margin-bottom: 12rem;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .timelines{
+        left: 12%;
+    }
+    .college, .hs, .ss{
+        min-width: 85%;
+        padding: 1rem;
+    }
+    .college-section, .hs-section, .ss-section{
+        justify-content: flex-end;
+        margin-bottom: 4rem;
+    }
+    .grad-icon2{
+        margin-bottom: 12rem;
+    }
+    .grad-icon1{
+        margin-bottom: 17rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .timelines{
+        left: 4%;
+    }
+    .grad-icon2{
+        margin-bottom: 13rem;
+        size: 25px;
+    }
+    .grad-icon1{
+        margin-bottom: 18rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .grad-icon2{
+        margin-bottom: 15rem
+    }
+    .college-section, .hs-section, .ss-section{
+        margin-bottom: 3rem;
+    }
+    .college, .hs, .ss{
+        min-width: 80%;
+        padding: .5rem;
+    }
+}

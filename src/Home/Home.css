@@ -1,0 +1,108 @@
+
+.myPic{
+    width: 380px;
+    height: 380px;
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 60%;
+    border: none;
+    padding: -2px;
+    box-shadow: 5px 5px 22px 20px #ff6900;
+}
+.main-container{
+    padding-bottom: 4rem;
+}
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.left-desc{
+    margin-top: -2rem;
+    max-width: 40rem;
+}
+.name{
+    font-size: 3rem;
+    color: #FFF;
+}
+span{
+    font-size: 3rem;
+    color: #ff6900;
+}
+.primary-btn, .secondary-btn{
+    height: 2.5rem;
+    background-color: transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 8px;
+    transition: .1s ease-in-out;
+    padding: 0 0.8rem;
+}
+.primary-btn{
+    background-color: #ff6900;
+    color: white;
+    border: none;
+    /* border-color: #FFF; */
+    
+}
+.secondary-btn{
+    color: #ff6900;
+    border-color: #ff6900;
+}
+.primary-btn:hover, .secondary-btn:hover{
+    transform: scale(1.08);
+}
+h1{
+    margin-block: 0;
+}
+
+.social-icons{
+    cursor: pointer;
+    margin: 2rem 1.5rem 0 0;
+    transition: 0.1s ease;
+}
+.social-icons:hover{
+    color: #ff6900;
+    transform: translateY(-10px);
+}
+.social-div{
+    margin-bottom: 3rem;
+}
+
+
+/* ######################### Media Query #################################*/
+
+@media screen and (max-width:1330px) {
+   .left-desc{
+    max-width: 30rem;
+   }
+}
+@media screen and (max-width:1200px) {
+  .home-container{
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5rem;
+  }
+
+}
+
+@media screen and (max-width:760px) {
+    .name{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h1 span{
+        font-size: 1.8rem;
+    }
+    .myPic{
+        width: 300px;
+        height: 300px;
+    }
+}
