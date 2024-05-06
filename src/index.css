@@ -5,50 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(125% 125% at 50% 0%, #020617 55%, #dd335c);
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 9rem;
+  min-height: 100vh;
+  color: white;
 }
-.container{
+
+.container {
   padding: 0 11rem;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-a{
+a {
   text-decoration: none;
   color: #FFF;
 }
-ul{
+
+ul {
   list-style: none;
 }
 
-body{
-  padding-top: 9rem;
-  min-height: 100vh;
-  background-image: radial-gradient(125% 125% at 50% 0%, #020617 55%, #dd335c);
-  background-position: center;
-  background-attachment: fixed;
-}
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width:1400px) {
-  .container{
+  .container {
     padding: 0 9rem;
   }
 }
 
 @media screen and (max-width:760px) {
-  .container{
+  .container {
     padding: 0 4rem;
   }
 }
 
 @media screen and (max-width:502px) {
-  .container{
+  .container {
     padding: 0 2rem;
   }
 }
