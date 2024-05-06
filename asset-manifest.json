@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SB_Portfolio/static/css/main.7ae47304.css",
+    "main.js": "/SB_Portfolio/static/js/main.b2d6f63e.js",
+    "static/media/myImg_.JPG": "/SB_Portfolio/static/media/myImg_.9a23c77f1115971d9ba2.JPG",
+    "static/media/Subhajit_Barman.jpg": "/SB_Portfolio/static/media/Subhajit_Barman.e3e757d9aaa07e93cc7d.jpg",
+    "index.html": "/SB_Portfolio/index.html",
+    "main.7ae47304.css.map": "/SB_Portfolio/static/css/main.7ae47304.css.map",
+    "main.b2d6f63e.js.map": "/SB_Portfolio/static/js/main.b2d6f63e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ae47304.css",
+    "static/js/main.b2d6f63e.js"
+  ]
+}
