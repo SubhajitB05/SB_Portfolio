@@ -12,7 +12,9 @@ body {
   min-height: 100vh;
   color: white;
 }
-
+:root{
+  --primary-color: #ff8833;
+}
 .container {
   padding: 0 11rem;
 }
