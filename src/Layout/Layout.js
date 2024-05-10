@@ -3,11 +3,13 @@ import { Outlet, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [showMenu, setShoeMenu] = useState(false);
-
+  const [showMenu, setShoeMenu] = useState();
+  useEffect(()=>{
+    setShoeMenu(false);
+  }, []);
   return (
     <div className="container nav-container">
       <div className="nav-bar">

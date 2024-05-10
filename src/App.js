@@ -2,7 +2,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Layout from "./Layout/Layout";
+// import Layout from "./Layout/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
 import Education from "./Education/Education";
@@ -17,7 +17,6 @@ const App = () => {
         path="/"
         element={
           <>
-            <Layout />
             <Home />
           </>
         }
@@ -27,7 +26,6 @@ const App = () => {
         element={
           <>
             <AnimatePresence>
-              <Layout />
               <About />
             </AnimatePresence>
           </>
@@ -37,7 +35,6 @@ const App = () => {
         path="/education"
         element={
           <>
-            <Layout />
             <Education />
           </>
         }
@@ -46,7 +43,6 @@ const App = () => {
         path="/projects"
         element={
           <>
-            <Layout />
             <Projects />
           </>
         }
@@ -55,7 +51,6 @@ const App = () => {
         path="/coding-profiles"
         element={
           <>
-            <Layout />
             <CodingProfiles />
           </>
         }
@@ -64,7 +59,6 @@ const App = () => {
         path="/contact"
         element={
           <>
-            <Layout />
             <Contact />
           </>
         }

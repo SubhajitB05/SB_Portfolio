@@ -9,7 +9,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   padding-top: 9rem;
-  min-height: 100vh;
+  min-height: 80vh;
   color: white;
 }
 :root{

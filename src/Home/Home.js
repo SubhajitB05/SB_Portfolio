@@ -1,4 +1,4 @@
-import subhajit from "../Assets/Subhajit_Barman.jpg";
+
 import myImg from "../Assets/myImg_.JPG";
 import { Link } from "react-router-dom";
 import "./Home.css";

@@ -17,6 +17,7 @@
 
 .edu-main-section{
     position: relative;
+    overflow: hidden;
 }
 .timelines{
     display: flex;
