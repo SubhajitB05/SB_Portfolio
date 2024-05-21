@@ -2,12 +2,18 @@ import "./Layout.css";
 import { Outlet, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { FaHome, FaCode } from "react-icons/fa";
+import { GoProject } from "react-icons/go";
+import { MdContacts } from "react-icons/md";
+
+import { IoMdInformationCircleOutline } from "react-icons/io";
+import { MdSchool } from "react-icons/md";
 
 import { useState, useEffect } from "react";
 
 const Header = () => {
   const [showMenu, setShoeMenu] = useState();
-  useEffect(()=>{
+  useEffect(() => {
     setShoeMenu(false);
   }, []);
   return (
@@ -37,9 +43,8 @@ const Header = () => {
           </li>
           <button className="primary-btn">Sign in</button>
         </ul>
-        {
-          !showMenu ? 
-            <GiHamburgerMenu
+        {!showMenu ? (
+          <GiHamburgerMenu
             style={{ color: "white" }}
             className="hamburger-icon"
             size={26}
@@ -47,40 +52,54 @@ const Header = () => {
               setShoeMenu(!showMenu);
             }}
           />
-          :
-          <ImCross size={22}
+        ) : (
+          <ImCross
+            className="cross-icon"
+            size={22}
             onClick={() => {
               setShoeMenu(!showMenu);
             }}
           />
-        }
+        )}
       </div>
 
-      <div>
-      <ul className={showMenu ? "toggle-menu-links show": "toggle-menu-links"}>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/education">Education</NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink to="/coding-profiles">Coding Profiles</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-        <button className="primary-btn">Sign in</button>
-      </ul>
-    </div>
-
-         
+      <div className="toggle-div">
+        <ul
+          className={showMenu ? "toggle-menu-links show" : "toggle-menu-links"}
+        >
+          <li>
+            <NavLink to="/">
+              <FaHome size={30} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">
+              <IoMdInformationCircleOutline size={30} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/education">
+              <MdSchool size={30} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/projects">
+              <GoProject size={30} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/coding-profiles">
+              <FaCode size={30} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">
+              <MdContacts size={30} />
+            </NavLink>
+          </li>
+          {/* <button className="primary-btn">Sign in</button> */}
+        </ul>
+      </div>
     </div>
   );
 };
@@ -97,7 +116,5 @@ const Layout = () => {
     </div>
   );
 };
-
-
 
 export default Layout;

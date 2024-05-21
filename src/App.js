@@ -1,7 +1,7 @@
 // App.js
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 // import Layout from "./Layout/Layout";
 import Home from "./Home/Home";
 import About from "./About/About";
@@ -25,9 +25,7 @@ const App = () => {
         path="/about"
         element={
           <>
-            <AnimatePresence>
-              <About />
-            </AnimatePresence>
+            <About />
           </>
         }
       />

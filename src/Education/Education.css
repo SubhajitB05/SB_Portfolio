@@ -27,6 +27,7 @@
     left: 48%;
     height: 100%;
     padding-top: 1rem;
+ 
 }
 
 
@@ -78,10 +79,13 @@
         margin-bottom: 4rem;
     }
     .grad-icon2{
-        margin-bottom: 12rem;
+        margin-bottom: 10rem;
     }
     .grad-icon1{
         margin-bottom: 17rem;
+    }
+    .bar{
+        height: 92%;
     }
 }
 
@@ -89,8 +93,11 @@
     .timelines{
         left: 4%;
     }
+    .bar{
+        height: 92%;
+    }
     .grad-icon2{
-        margin-bottom: 13rem;
+        margin-bottom: 12rem;
         size: 25px;
     }
     .grad-icon1{

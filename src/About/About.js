@@ -6,14 +6,15 @@ const About = () => {
   return (
     <div className="about-body">
       <div className="container about-main-container">
-        <m.div
-          className="about-pic"
+        
+        <m.img 
+          // className="about-pic"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <img src={myImg_} className="myImg_" />
-        </m.div>
+          src={myImg_} 
+          className="myImg_" />
+       
         <div className="about-desc">
           <m.h1
             initial={{ opacity: 0, y: 100 }}
@@ -35,8 +36,8 @@ const About = () => {
              transition={{ duration: 0.5, delay: 1.8 }}
           >A developer who loves to build cool things.</m.h1>
           <m.p
-             initial={{ opacity: 0, x: 100 }}
-             animate={{ opacity: 1, x: 0 }}
+             initial={{ opacity: 0, y: 100 }}
+             animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.5, delay: 2.2 }}
           >
             scelerisque fermentum dui faucibus in ornare quam viverra orci
