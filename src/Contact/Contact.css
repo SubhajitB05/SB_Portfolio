@@ -1,0 +1,66 @@
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.message-box{
+    border: 1px solid white;
+    width: 600px;
+     height: auto;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     border-radius: 10px;
+     backdrop-filter: blur(100px);
+     box-sizing: border-box;
+     
+}
+.message-box input{
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+.message-box input:focus{
+    outline: none;
+}
+textarea{
+    height: 100px;
+    background-color: transparent;
+    resize: none;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+}
+input::placeholder, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+textarea:focus{
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.send-btn{
+    cursor: pointer;
+    background-color: rgb(0, 151, 0);
+    color: white;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.send-btn:hover{
+    background-color: green;
+}

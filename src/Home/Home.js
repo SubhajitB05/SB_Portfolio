@@ -31,12 +31,12 @@ const Home = () => {
               <Link to={"https://github.com/SubhajitB05"} target="__">
                 <FaGithub className="social-icons" size={40} />
               </Link>
-              <Link to={"https://github.com/SubhajitB05"} target="__">
+              {/* <Link to={"https://github.com/SubhajitB05"} target="__">
                 <FaInstagram className="social-icons" size={40} />
-              </Link>
+              </Link> */}
             </div>
-            <button className="primary-btn">Download Resume</button>
-            <button className="secondary-btn">Message</button>
+            <a className="primary-btn" target="__blank" href="https://drive.google.com/file/d/19FPaTtuvaw5JE1Swo_Jmqo78ciNJcQks/view?usp=drive_link">Download Resume</a>
+            {/* <a to={'/contact'} className="secondary-btn">Message</a> */}
           </div>
           <div className="right-pic">
             <img src={myImg} className="myPic"></img>

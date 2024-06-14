@@ -21,7 +21,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            I am a 3rd year Computer Science and Engineering Student{" "}
+            I am a 4th year Computer Science and Engineering Student{" "}
           </m.h1>
           <m.h1
             initial={{ opacity: 0, y: 100 }}
@@ -40,12 +40,7 @@ const About = () => {
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.5, delay: 2.2 }}
           >
-            scelerisque fermentum dui faucibus in ornare quam viverra orci
-            sagittis eu volutpat odio facilisis mauris sit amet massa vitae
-            tortor condimentum lacinia quis vel eros donec ac odio tempor orci
-            dapibus ultrices in iaculis nunc sed augue lacus viverra vitae
-            congue eu consequat ac felis donec et odio pellentesque diam
-            volutpat commodo.
+            I am interested in MERN stack development and I have proficiency over languages like C/C++, Javacsript, HTML/CSS and frameworks/Libraries - Bootsrtap, React, Redux, Node.js
           </m.p>
         </div>
       </div>

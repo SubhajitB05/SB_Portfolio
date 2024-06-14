@@ -35,13 +35,13 @@ const Header = () => {
           <li>
             <NavLink to="/projects">Projects</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/coding-profiles">Coding Profiles</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact">Contact</NavLink>
           </li>
-          <button className="primary-btn">Sign in</button>
+          {/* <button className="primary-btn">Sign in</button> */}
         </ul>
         {!showMenu ? (
           <GiHamburgerMenu
@@ -68,32 +68,32 @@ const Header = () => {
           className={showMenu ? "toggle-menu-links show" : "toggle-menu-links"}
         >
           <li>
-            <NavLink to="/">
+            <NavLink to="/" title="Home">
               <FaHome size={30} />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about">
+            <NavLink to="/about" title="About">
               <IoMdInformationCircleOutline size={30} />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/education">
+            <NavLink to="/education" title="Education">
               <MdSchool size={30} />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">
+            <NavLink to="/projects" title="Projects">
               <GoProject size={30} />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/coding-profiles">
+            <NavLink to="/coding-profiles" title="Coding Profiles">
               <FaCode size={30} />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">
+            <NavLink to="/contact" title="Contact">
               <MdContacts size={30} />
             </NavLink>
           </li>

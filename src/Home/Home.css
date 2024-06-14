@@ -34,29 +34,23 @@ span{
     font-size: 3rem;
     color: var(--primary-color);
 }
-.primary-btn, .secondary-btn{
+.primary-btn{
+    display: inline-block;
     height: 2.5rem;
-    background-color: transparent;
     font-size: 1.1rem;
     cursor: pointer;
     border-radius: 5px;
-    margin: 0 8px;
     transition: .1s ease-in-out;
-    padding: 0 0.8rem;
-}
-.primary-btn{
-    background-color: var(--primary-color);
+    padding: 10px 0.8rem 0;
     color: white;
-    border: none;
-    /* border-color: #FFF; */
-    
+    border: 1px solid white;
+
 }
-.secondary-btn{
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-.primary-btn:hover, .secondary-btn:hover{
+
+.primary-btn:hover{
     transform: scale(1.08);
+    background-color: var(--primary-color);
+    border: none;
 }
 h1{
     margin-block: 0;
